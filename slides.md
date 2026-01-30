@@ -1157,3 +1157,27 @@ transition: slide-left
 <!--
 Thanks for exploring subagents and skills. Now go build something incredible!
 -->
+
+---
+layout: center
+class: text-center
+transition: slide-left
+---
+
+<div class="space-y-8">
+
+<div class="text-lg opacity-50 uppercase tracking-widest">
+  Prepared by
+</div>
+
+<div class="text-4xl font-bold">
+  Jef Mari
+</div>
+
+<div>
+  <a href="https://github.com/JefMari" target="_blank" class="text-blue-400 hover:text-blue-300 text-xl">
+    github.com/JefMari
+  </a>
+</div>
+
+</div>
