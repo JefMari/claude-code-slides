@@ -624,46 +624,55 @@ transition: slide-left
 
 # Skills Defined
 
-Reusable knowledge packs that extend agent capabilities
+Reusable, filesystem-based resources that provide domain-specific expertise
 
 <v-clicks>
 
-<div class="grid grid-cols-2 gap-8 mt-8">
+<div class="text-sm opacity-80 mt-2 mb-4">
+Skills load on-demand and eliminate the need to repeatedly provide the same guidance across conversations.
+</div>
 
-<div class="bg-purple-500 bg-opacity-10 border border-purple-500 rounded-lg p-6">
+<div class="grid grid-cols-2 gap-6 mt-4">
+
+<div class="bg-purple-500 bg-opacity-10 border border-purple-500 rounded-lg p-5">
 
 ### Domain Knowledge
 Expert-level understanding of specific technologies
 
 </div>
 
-<div class="bg-blue-500 bg-opacity-10 border border-blue-500 rounded-lg p-6">
+<div class="bg-blue-500 bg-opacity-10 border border-blue-500 rounded-lg p-5">
 
 ### Best Practices
-Curated patterns and conventions
+Curated patterns, workflows, and conventions
 
 </div>
 
-<div class="bg-green-500 bg-opacity-10 border border-green-500 rounded-lg p-6">
+<div class="bg-green-500 bg-opacity-10 border border-green-500 rounded-lg p-5">
 
-### Workflow Patterns
-Step-by-step guides for common tasks
-
-</div>
-
-<div class="bg-orange-500 bg-opacity-10 border border-orange-500 rounded-lg p-6">
-
-### Shareable
-Install and reuse across projects
+### On-Demand Loading
+Loaded when needed — not conversation-level prompts
 
 </div>
 
+<div class="bg-orange-500 bg-opacity-10 border border-orange-500 rounded-lg p-5">
+
+### Shareable & Reusable
+Install once, use across projects and conversations
+
+</div>
+
+</div>
+
+<div class="mt-4 text-xs opacity-60 italic">
+Unlike prompts (one-off, conversation-level instructions), skills persist on the filesystem and transform general-purpose agents into specialists.
 </div>
 
 </v-clicks>
 
 <!--
-Skills are not execution contexts - they're pure knowledge and instructions.
+Skills are not execution contexts — they're pure knowledge and instructions.
+They are filesystem-based, loaded on-demand, and eliminate repetitive guidance across conversations.
 -->
 
 ---
