@@ -233,7 +233,7 @@ transition: slide-left
 
 # How Subagents Work
 
-<div class="font-mono text-xl mt-12 space-y-6">
+<div class="font-mono text-base mt-4 space-y-2">
 
 <v-clicks>
 
