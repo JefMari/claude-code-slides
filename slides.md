@@ -446,13 +446,94 @@ layout: default
 transition: slide-left
 ---
 
+# What is MCP?
+
+**Model Context Protocol** — an open standard for connecting AI agents to external tools and data sources
+
+<v-clicks>
+
+<div class="grid grid-cols-3 gap-6 mt-8">
+
+<div class="bg-blue-500 bg-opacity-10 border border-blue-500 rounded-lg p-6">
+
+### Open Standard
+A universal protocol any tool or data source can implement
+
+</div>
+
+<div class="bg-green-500 bg-opacity-10 border border-green-500 rounded-lg p-6">
+
+### Tool Integration
+Connects agents to databases, APIs, file systems, and more
+
+</div>
+
+<div class="bg-purple-500 bg-opacity-10 border border-purple-500 rounded-lg p-6">
+
+### Why It Matters
+Agents gain capabilities without custom code — just plug in an MCP server
+
+</div>
+
+</div>
+
+</v-clicks>
+
+<!--
+MCP is the standard that lets AI agents talk to the outside world through a common interface.
+-->
+
+---
+layout: center
+transition: slide-left
+---
+
+# MCP in Claude Code
+
+<div class="font-mono text-lg mt-8 space-y-4">
+
+<v-clicks>
+
+<div class="border border-blue-500 rounded p-4 text-center">Claude Code (Agent)</div>
+<div class="text-center text-2xl">↓</div>
+<div class="border border-green-500 rounded p-4 text-center">MCP Server</div>
+<div class="text-center text-2xl">↓</div>
+<div class="grid grid-cols-3 gap-4">
+  <div class="border border-purple-500 rounded p-3 text-center text-sm">Database Access</div>
+  <div class="border border-orange-500 rounded p-3 text-center text-sm">API Integrations</div>
+  <div class="border border-pink-500 rounded p-3 text-center text-sm">Custom Tools</div>
+</div>
+
+</v-clicks>
+
+</div>
+
+<v-click>
+
+<div class="mt-8 text-lg opacity-75 text-center">
+
+Configure MCP servers in `.claude/settings.json` to extend Claude Code with any external capability
+
+</div>
+
+</v-click>
+
+<!--
+Claude Code uses MCP servers as a bridge to external tools and data, making the agent infinitely extensible.
+-->
+
+---
+layout: default
+transition: slide-left
+---
+
 # Custom Agents
 
 Create your own specialized agents
 
 <v-clicks>
 
-<div class="mt-8">
+<div class="mt-4">
 
 ### Location
 
@@ -462,7 +543,7 @@ Create your own specialized agents
 
 </div>
 
-<div class="mt-8">
+<div class="mt-2">
 
 ### Structure
 
@@ -470,7 +551,7 @@ Markdown file with YAML frontmatter + instructions
 
 </div>
 
-<div class="mt-4">
+<div class="mt-2">
 
 ### Configuration Fields
 
@@ -700,15 +781,15 @@ Advanced TypeScript patterns, generics, utility types, and type gymnastics
 
 <div class="border border-purple-500 rounded-lg p-6">
 
-### slidev-frontend-expert
-Slidev presentation development with Vue, layouts, and animations
+### vue-best-practices
+Curated Vue.js conventions, performance optimization, and architecture
 
 </div>
 
 <div class="border border-orange-500 rounded-lg p-6">
 
-### vue-best-practices
-Curated Vue.js conventions, performance optimization, and architecture
+### design-system-next
+Toge Design System Vue 3 component library integration and usage patterns
 
 </div>
 
@@ -745,6 +826,7 @@ skills:
   - typescript-advanced-types
   - tailwindcss
   - vite
+  - design-system-next
 ---
 
 You are a frontend development specialist with expertise in
@@ -807,7 +889,7 @@ Common solutions that apply across projects
 
 <div class="mt-8 text-lg opacity-75">
 
-Skills are Markdown files stored in GitHub repos. Share yours with the community!
+Skills are Markdown files stored in any Git repo — GitHub, Azure DevOps, or your company's internal repos. Build company-specific skills and share them across teams!
 
 </div>
 
@@ -824,45 +906,45 @@ transition: slide-left
 
 # The Power Combo
 
-<div class="text-5xl font-bold mt-12 mb-12">
+<div class="text-4xl font-bold mt-6 mb-6">
 Skills + Agents = Expert Assistants
 </div>
 
 <v-clicks>
 
-<div class="grid grid-cols-3 gap-8 items-center text-center">
+<div class="grid grid-cols-3 gap-6 items-center text-center">
 
-<div class="border-2 border-green-500 rounded-lg p-8">
+<div class="border-2 border-green-500 rounded-lg p-4">
 
 ### Agent
 Execution Context
 
-<div class="text-sm mt-4 opacity-75">
+<div class="text-sm mt-2 opacity-75">
 Tools, autonomy, action
 </div>
 
 </div>
 
-<div class="text-6xl">+</div>
+<div class="text-5xl">+</div>
 
-<div class="border-2 border-blue-500 rounded-lg p-8">
+<div class="border-2 border-blue-500 rounded-lg p-4">
 
 ### Skills
 Knowledge Base
 
-<div class="text-sm mt-4 opacity-75">
+<div class="text-sm mt-2 opacity-75">
 Expertise, patterns, guidance
 </div>
 
 </div>
 
-<div class="col-span-3 text-6xl mt-8">=</div>
+<div class="col-span-3 text-5xl mt-4">=</div>
 
-<div class="col-span-3 border-2 border-purple-500 rounded-lg p-8 bg-purple-500 bg-opacity-10">
+<div class="col-span-3 border-2 border-purple-500 rounded-lg p-4 bg-purple-500 bg-opacity-10">
 
 ### Specialized Expert Assistant
 
-<div class="text-sm mt-4 opacity-75">
+<div class="text-sm mt-2 opacity-75">
 Knows what to do AND how to do it
 </div>
 
@@ -881,74 +963,169 @@ layout: center
 transition: slide-left
 ---
 
-# Architecture Overview
+# The Kitchen Setup
 
-<div class="font-mono text-xl mt-12 space-y-6">
+<div class="grid grid-cols-2 gap-6 mt-8">
 
 <v-clicks>
 
-<div class="text-center">You (Developer)</div>
-<div class="text-center">↓</div>
-<div class="border border-blue-500 rounded p-4 text-center">Claude Code (Main Agent)</div>
-<div class="text-center">↓</div>
-<div class="text-center">Task Tool (Delegation)</div>
-<div class="text-center">↓</div>
-<div class="border border-green-500 rounded p-4 text-center">Subagent + Skills (Specialized Worker)</div>
-<div class="text-center">↓</div>
-<div class="border border-purple-500 rounded p-4 text-center">Result (Clean Output)</div>
-<div class="text-center">↓</div>
-<div class="border border-blue-500 rounded p-4 text-center">Main Agent (Integration)</div>
+<div class="bg-blue-500 bg-opacity-10 border border-blue-500 rounded-lg p-5">
+<div class="text-3xl mb-2">👨‍🍳</div>
+
+### Claude Code — Master Chef
+Runs the kitchen. Reads orders, coordinates the team, and makes sure every dish goes out right.
+
+</div>
+
+<div class="bg-green-500 bg-opacity-10 border border-green-500 rounded-lg p-5">
+<div class="text-3xl mb-2">🧑‍🍳</div>
+
+### Subagents — Specialist Chefs
+Pastry chef, grill chef, saucier — each one handles what they do best, then hands it back.
+
+</div>
+
+<div class="bg-orange-500 bg-opacity-10 border border-orange-500 rounded-lg p-5">
+<div class="text-3xl mb-2">🚚</div>
+
+### MCP — Delivery for Outside Ingredients
+Need something not in the kitchen? MCP brings in fresh ingredients from external suppliers.
+
+</div>
+
+<div class="bg-purple-500 bg-opacity-10 border border-purple-500 rounded-lg p-5">
+<div class="text-3xl mb-2">📖</div>
+
+### Skills — Recipes
+Step-by-step instructions that tell any chef exactly how to prepare a dish. Reusable and shareable.
+
+</div>
 
 </v-clicks>
 
 </div>
 
 <!--
-The full architecture shows how all pieces work together seamlessly.
+A kitchen analogy: Claude Code is the head chef orchestrating everything.
+Subagents are specialist chefs. MCP delivers external ingredients. Skills are the recipes.
+-->
+
+---
+layout: section
+transition: slide-left
+---
+
+# How Does It Compare?
+
+<!--
+Let's see how Claude Code stacks up against the most popular AI coding tool — GitHub Copilot.
+-->
+
+---
+layout: two-cols
+transition: slide-left
+---
+
+# Philosophy Difference
+
+<div class="pr-6">
+
+## Claude Code
+
+<v-clicks>
+
+- **Agentic paradigm**
+- Autonomous execution across files
+- Full terminal and tool access
+- Delegates to specialized subagents
+- Extensible via skills and MCP
+- Thinks, plans, then acts
+
+</v-clicks>
+
+</div>
+
+::right::
+
+<div class="pl-6">
+
+## GitHub Copilot
+
+<v-clicks>
+
+- **Autocomplete paradigm**
+- Inline code suggestions
+- Chat panel for Q&A
+- Limited tool access
+- Editor-integrated only
+- Reactive, not autonomous
+
+</v-clicks>
+
+</div>
+
+<!--
+Claude Code operates as a full agent — it reads, writes, executes, and delegates.
+Copilot focuses on real-time code completion and chat-based assistance within the editor.
 -->
 
 ---
 layout: default
 transition: slide-left
+class: text-sm
 ---
 
-# Getting Started
+# Feature Comparison
 
 <v-clicks>
 
-<div class="space-y-8 mt-12 text-xl">
-
-<div class="flex items-start gap-4">
-  <div class="text-3xl font-bold text-blue-500">1</div>
-  <div>Install Claude Code CLI from Anthropic</div>
-</div>
-
-<div class="flex items-start gap-4">
-  <div class="text-3xl font-bold text-green-500">2</div>
-  <div>Create <code>.claude/agents/</code> directory in your project</div>
-</div>
-
-<div class="flex items-start gap-4">
-  <div class="text-3xl font-bold text-purple-500">3</div>
-  <div>Define your custom agents in <code>.md</code> files</div>
-</div>
-
-<div class="flex items-start gap-4">
-  <div class="text-3xl font-bold text-orange-500">4</div>
-  <div>Install skills with <code>npx skills add</code></div>
-</div>
-
-<div class="flex items-start gap-4">
-  <div class="text-3xl font-bold text-pink-500">5</div>
-  <div>Start building with specialized agents!</div>
-</div>
-
-</div>
+| Feature | Claude Code | GitHub Copilot |
+|---------|:-----------:|:--------------:|
+| Subagent delegation | ✅ | ❌ |
+| Custom skills system | ✅ | ❌ |
+| MCP integration | ✅ | ✅ |
+| Terminal execution | ✅ | Limited |
+| Multi-file refactoring | ✅ | Limited |
+| Custom agent creation | ✅ | Limited |
+| Autonomous workflows | ✅ | ❌ |
+| Inline code suggestions | ❌ | ✅ |
+| IDE integration | VS Code extension | Deep IDE integration |
 
 </v-clicks>
 
 <!--
-Getting started is straightforward - just a few steps to unlock powerful capabilities.
+Each tool has its strengths. Claude Code excels at complex, multi-step agentic workflows.
+Copilot excels at fast inline suggestions and tight IDE integration.
+-->
+
+---
+layout: center
+transition: slide-left
+---
+
+# Architecture Overview
+
+<div class="font-mono text-base mt-8 space-y-3">
+
+<v-clicks>
+
+<div class="text-center">You (Developer)</div>
+<div class="text-center">↓</div>
+<div class="border border-blue-500 rounded p-3 text-center">Claude Code (Main Agent)</div>
+<div class="text-center">↓</div>
+<div class="grid grid-cols-2 gap-4">
+  <div class="border border-green-500 rounded p-3 text-center">Subagents + Skills</div>
+  <div class="border border-orange-500 rounded p-3 text-center">MCP Servers</div>
+</div>
+<div class="text-center">↓</div>
+<div class="border border-purple-500 rounded p-3 text-center">Results (Integrated Output)</div>
+
+</v-clicks>
+
+</div>
+
+<!--
+The full architecture shows how subagents, skills, and MCP servers all connect through Claude Code.
 -->
 
 ---
