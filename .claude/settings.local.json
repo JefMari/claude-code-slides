@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la \"C:\\\\Users\\\\JMari\\\\Desktop\\\\repos\\\\slides\\\\.claude\"\" 2>/dev/null || echo \"Directory not found \")",
+      "Bash(ls -la \"C:\\\\Users\\\\JMari\\\\Desktop\\\\repos\\\\slides\\\\.claude\\\\agents\"\" 2>/dev/null || echo \"Directory not found \")",
+      "Bash(npm install:*)"
+    ]
+  }
+}

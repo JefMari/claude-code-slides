@@ -1,0 +1,222 @@
+/* Dark theme customizations for Claude Code presentation */
+
+:root {
+  --slidev-theme-primary: #3b82f6;
+  --slidev-theme-secondary: #8b5cf6;
+  --slidev-theme-accent: #10b981;
+}
+
+/* Dark background enhancements */
+.slidev-layout {
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Code block styling */
+.slidev-code {
+  background-color: #1e293b !important;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Improved heading contrast */
+h1, h2, h3, h4, h5, h6 {
+  color: #f1f5f9;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Link styling */
+a {
+  color: #60a5fa;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #93c5fd;
+  text-decoration: underline;
+}
+
+/* Table styling for dark theme */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+  color: #f1f5f9;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+td {
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #cbd5e1;
+}
+
+tr:hover {
+  background-color: rgba(59, 130, 246, 0.1);
+}
+
+/* List styling */
+ul, ol {
+  color: #cbd5e1;
+  line-height: 1.8;
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+/* Code inline */
+code {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.9em;
+  font-family: 'Fira Code', monospace;
+}
+
+/* Blockquote */
+blockquote {
+  border-left: 4px solid #3b82f6;
+  padding-left: 1.5rem;
+  margin-left: 0;
+  color: #cbd5e1;
+  font-style: italic;
+}
+
+/* Grid utilities */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-4 { gap: 1rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.gap-12 { gap: 3rem; }
+.gap-16 { gap: 4rem; }
+
+/* Spacing utilities */
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-12 { margin-top: 3rem; }
+.mt-16 { margin-top: 4rem; }
+
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+
+.pt-12 { padding-top: 3rem; }
+
+.p-4 { padding: 1rem; }
+.p-6 { padding: 1.5rem; }
+.p-8 { padding: 2rem; }
+
+.pr-4 { padding-right: 1rem; }
+.pr-8 { padding-right: 2rem; }
+.pl-4 { padding-left: 1rem; }
+.pl-8 { padding-left: 2rem; }
+
+/* Text utilities */
+.text-center { text-align: center; }
+.text-sm { font-size: 0.875rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.25rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-3xl { font-size: 1.875rem; }
+.text-5xl { font-size: 3rem; }
+.text-6xl { font-size: 3.75rem; }
+
+.font-bold { font-weight: 700; }
+
+/* Opacity utilities */
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+
+/* Border utilities */
+.border { border: 1px solid; }
+.border-2 { border: 2px solid; }
+.rounded { border-radius: 0.25rem; }
+.rounded-lg { border-radius: 0.75rem; }
+
+/* Color utilities */
+.border-blue-500 { border-color: #3b82f6; }
+.border-green-500 { border-color: #10b981; }
+.border-purple-500 { border-color: #8b5cf6; }
+.border-orange-500 { border-color: #f97316; }
+.border-pink-500 { border-color: #ec4899; }
+
+.bg-blue-500 { background-color: #3b82f6; }
+.bg-green-500 { background-color: #10b981; }
+.bg-purple-500 { background-color: #8b5cf6; }
+.bg-orange-500 { background-color: #f97316; }
+
+.bg-opacity-10 { background-color: rgba(var(--bg-rgb), 0.1); }
+
+.text-blue-400 { color: #60a5fa; }
+.text-blue-300 { color: #93c5fd; }
+.text-blue-500 { color: #3b82f6; }
+.text-green-500 { color: #10b981; }
+.text-purple-500 { color: #8b5cf6; }
+.text-orange-500 { color: #f97316; }
+.text-pink-500 { color: #ec4899; }
+
+/* Flexbox utilities */
+.flex { display: flex; }
+.items-start { align-items: flex-start; }
+.items-center { align-items: center; }
+
+/* Space utilities */
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-y-8 > * + * { margin-top: 2rem; }
+
+/* Hover utilities */
+.hover\:text-blue-300:hover { color: #93c5fd; }
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slidev-vclick-target {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Presenter notes styling */
+.slidev-note {
+  background-color: #1e293b;
+  color: #cbd5e1;
+}
