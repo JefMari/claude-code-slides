@@ -7,9 +7,13 @@ colorSchema: dark
 background: https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80
 ---
 
-# Claude Code: Subagents & Skills
+# Claude Code
 
-Extending AI-Powered Development with Specialized Agents
+The Intelligent Engine Powering Blackmagic AI
+
+<div class="text-lg opacity-75 mt-4">
+  Explore the cutting-edge AI architecture behind next-generation development
+</div>
 
 <div class="pt-12">
   <span class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
@@ -604,6 +608,231 @@ When working on Vue components:
 
 <!--
 This is a complete custom agent definition - frontmatter config plus detailed instructions.
+-->
+
+---
+layout: default
+transition: slide-left
+---
+
+# Claude Code Commands
+
+Interact with Claude Code through a rich command interface
+
+<v-clicks>
+
+<div class="grid grid-cols-2 gap-8 mt-8">
+
+<div class="bg-blue-500 bg-opacity-10 border border-blue-500 rounded-lg p-6">
+
+### Built-in Commands
+Slash commands for common operations
+
+</div>
+
+<div class="bg-green-500 bg-opacity-10 border border-green-500 rounded-lg p-6">
+
+### Skill Invocation
+Run skills directly from the CLI
+
+</div>
+
+<div class="bg-purple-500 bg-opacity-10 border border-purple-500 rounded-lg p-6">
+
+### Session Control
+Manage conversation state and history
+
+</div>
+
+<div class="bg-orange-500 bg-opacity-10 border border-orange-500 rounded-lg p-6">
+
+### Natural Language
+Just describe what you need
+
+</div>
+
+</div>
+
+</v-clicks>
+
+<!--
+Claude Code offers both structured commands and natural language interaction.
+-->
+
+---
+layout: two-cols
+transition: slide-left
+---
+
+# Slash Commands
+
+<div class="pr-6">
+
+<v-clicks>
+
+### Session Management
+
+```bash
+/help      # Show available commands
+/clear     # Clear conversation history
+/reset     # Reset entire session
+/exit      # Exit Claude Code
+```
+
+### Git Operations
+
+```bash
+/commit    # Create a commit
+/pr        # Create pull request
+```
+
+</v-clicks>
+
+</div>
+
+::right::
+
+<div class="pl-6">
+
+<v-clicks>
+
+### Information
+
+```bash
+/status    # Show session info
+/history   # View command history
+/tokens    # Show token usage
+```
+
+### Development
+
+```bash
+/test      # Run tests
+/build     # Build project
+/lint      # Run linter
+```
+
+</v-clicks>
+
+</div>
+
+<!--
+Slash commands provide quick access to common operations without verbose instructions.
+-->
+
+---
+layout: center
+transition: slide-left
+---
+
+# Invoking Skills
+
+<div class="font-mono text-xl mt-8">
+
+<v-clicks>
+
+<div class="bg-blue-500 bg-opacity-10 border border-blue-500 rounded p-6 mb-4">
+
+```bash
+/<skill-name>
+```
+
+</div>
+
+<div class="text-lg mb-8">
+Skills are invoked by typing a forward slash followed by the skill name
+</div>
+
+<div class="grid grid-cols-2 gap-4">
+
+<div class="border border-green-500 rounded p-4 text-center">
+
+```bash
+/vue
+```
+<div class="text-sm mt-2 opacity-75">Load Vue 3 expertise</div>
+
+</div>
+
+<div class="border border-purple-500 rounded p-4 text-center">
+
+```bash
+/design-system-next
+```
+<div class="text-sm mt-2 opacity-75">Load design system knowledge</div>
+
+</div>
+
+</div>
+
+</v-clicks>
+
+</div>
+
+<!--
+Skill invocation is simple and immediate - just use the skill name as a command.
+-->
+
+---
+layout: default
+transition: slide-left
+---
+
+# Command Examples in Action
+
+<v-clicks>
+
+<div class="space-y-4 mt-6">
+
+<div class="border border-blue-500 rounded-lg p-4">
+
+### Scenario 1: Committing Changes
+
+```bash
+/commit
+```
+
+<div class="text-xs mt-2 opacity-75">
+Claude Code will analyze staged changes, suggest a commit message, and create the commit
+</div>
+
+</div>
+
+<div class="border border-green-500 rounded-lg p-4">
+
+### Scenario 2: Using a Skill
+
+```bash
+/vue
+# Then: "Create a composable for user authentication"
+```
+
+<div class="text-xs mt-2 opacity-75">
+Loads Vue 3 expertise, then applies it to your request
+</div>
+
+</div>
+
+<div class="border border-purple-500 rounded-lg p-4">
+
+### Scenario 3: Natural Language
+
+```bash
+"Refactor the authentication module to use TypeScript"
+```
+
+<div class="text-xs mt-2 opacity-75">
+No command needed — just describe what you want
+</div>
+
+</div>
+
+</div>
+
+</v-clicks>
+
+<!--
+Commands can be explicit slash commands or natural conversational requests.
 -->
 
 ---
